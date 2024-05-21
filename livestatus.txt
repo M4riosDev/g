@@ -1,0 +1,64 @@
+  setInterval(async() => {
+
+    const guild = client.guilds.cache.get(config.ServerCount["GUILD-ID"])
+     if (guild) {
+     const channel = guild.channels.cache.get(config.livestatus.channel)
+       if (channel) {
+       const messages = await channel.messages.fetch();
+       const firstMessage = messages.first(); 
+
+         if (firstMessage) {
+           try {
+               const serverIP = `${config.fivem.ip}:${config.fivem.port}`
+               const { data } = await axios.get(`http://${serverIP}/dynamic.json`);
+               const regex = /\[([0-9]+)\]/;
+               const queue = data.hostname.match(regex);
+               if (queue) {
+                 return firstMessage.edit( new Discord.MessageEmbed()
+                   .setColor("BLACK")
+                   .setAuthor(guild.name, guild.iconURL({format: "gif"}))
+                   .setDescription(`**Για να συνδεθείτε στον server μας πατήστε \`F8\` και γράψτε \`connect ${serverIP}\`**`)
+                   .addFields(
+                     {name: "**Server Status**", value: config.livestatus.online +">**Online**", inline:true},
+                     {name: "**Players**", value: `**${data.clients}/${data.sv_maxclients}**`, inline: true},
+                       {name: "**Queue**", value: `${queue[1]}`, inline: true}
+                   )
+                   .setFooter("Αναβαθμίστηκε στις " + moment(new Date()).format('h:mm:ss a') || "None")
+                 );
+               } else {
+                 return firstMessage.edit(new Discord.MessageEmbed()
+                   .setColor("BLACK")
+                   .setAuthor(guild.name, guild.iconURL({format: "gif"}))
+                   .setDescription(`**Για να συνδεθείτε στον server μας πατήστε \`F8\` και γράψτε \`connect ${serverIP}\`**`)
+                   .addFields(
+                     {name: "**Server Status**", value: config.livestatus.online +">**Online**", inline:true},
+                       {name: "**Players**", value: `**${data.clients}/${data.sv_maxclients}**`, inline: true},
+                       {name: "**Queue**", value: `**0**`, inline: true}
+                   )
+                   .setFooter("Αναβαθμίστηκε στις " + moment(new Date()).format('h:mm A') || "None")
+
+                 );
+               }
+             }catch (e) {
+               console.log(e.message);
+               firstMessage.edit(new Discord.MessageEmbed()
+               .setColor("BLACK")
+               .setAuthor(guild.name, guild.iconURL({format: "gif"}))
+               
+               .addFields(
+                 {name: "**Server Status**", value: config.livestatus.offline +">**Offline**", inline:true},
+                   {name: "**Players**", value: `**0**`, inline: true},
+                   {name: "**Queue**", value: `**0**`, inline: true}
+               )
+               .setFooter("Αναβαθμίστηκε στις " + moment(new Date()).format('h:mm A')) || "None");
+             }
+       } else{
+         channel.send(new Discord.MessageEmbed()
+           .setTimestamp()
+           .setDescription("GKan") || "GKan#8537").catch(e =>{
+         console.log(e.message)
+         })
+       }  
+     }
+   } 
+ }, 3000) 

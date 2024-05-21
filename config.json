@@ -1,0 +1,100 @@
+{
+"prefix": "!",
+"token": "",
+"WFSCHANNEL": "1014996828875403375",
+"WFSCATEGORY": "1014996802564534394",
+"STAFFROLE": "947207580567101541",
+"donatenot": "1015004766612488282",
+"supportnot": "1014996860378820649",
+"EMBEDCOLOR": "#284c94",
+"DONATEMANAGER": "947207537567072366",
+"WFDCHANNEL": "1014996827197673543",
+"WFDCATEGORY": "1014996802564534394",
+"staff team role id": "947207580567101541",
+"CIVILIANROLE": "1015005271187279952",
+"setactivity": " Roleplay || Power By GKan#8537",
+"ticket": {
+     "message id": "1018176510995202058",
+     "ERid": "947207367920082985", 
+     "SRid": "947207580567101541",  
+     "Donid": "947207537567072366",
+     "logs": "1015004732626047018"
+},
+"fivem":{
+    "ip": "45.135.201.93",
+    "port":"30120"
+},                     
+"livestatus": {
+    "channel": "1014996872697483364",
+    "online": "🟢",
+    "offline": "🔴"
+},
+"reports": {
+    "bug": "1018178040280404050",
+    "buglogs": "1018178104843309086",
+    "suggestions": "1014996878015877200",
+    "civreplog": "1003685985802006629",
+    "civrep": "877230734320992290",
+    "banapp": "877230734320992292",
+    "banapplog": "1003686602419220511",
+    "staffrep": "877230734320992291",
+    "staffreplog": "1003686043297513604",
+    "ann": "1014998225012408432"
+},
+"rules": {
+    "general": "1014996862362714173",
+    "rob": "1014996863939776562",
+    "criminal": "1014996863201574942",
+    "police": "1014996865558781992",
+    "ekab": "1014996864795426816",
+    "zones": "1014996866426998814",
+    "streamer": "877230733515710560",
+    "polls": "1014996869245567146",
+    "job": "1014996883074195636",
+    "news": "1018178640548208660"
+},
+"donate": {
+    "packs": "1014996856754942033",
+    "job": "1014996855760879626"
+},
+"act":{
+    "onduty": "1018177063557021828",
+    "logs": "1015004698446680165"
+},
+"verify": {
+   "verifyrole": "947207782933880924",
+   "unverify": "1015005271187279952"
+},
+"logs": {   
+    "join": "1015004244253880442",
+    "leave": "1015004273777578006",
+    "ban": "1015004313053052978",
+    "unban": "1015004344518717521",
+    "messages":"1015004615869214760",
+    "voice": "1015004570092584962",
+    "userrole": "1015004502732062750",
+    "member": "1015004400294563871",
+    "rolecreate": "1015004541760053319",
+    "channel": "1015004670936219718",
+    "alts": "1015004807456624710",
+    "antilink": "1015004855615631534"
+},
+"ServerCount":{
+    "GUILD-ID": "947207367920082985",
+    "MEMBERS": "1014996811490000926",
+    "BOOSTS": "1018175368366137394"
+},
+"applications": {
+    "Staff": "https://docs.google.com/forms/d/e/1FAIpQLScJYOZSpZV4JCKvOVFaJXH3qp6B7kTNQpwt8aRbZHGmTggZdA/viewform",
+    "Ekab": "https://docs.google.com/forms/d/e/1FAIpQLSeYF5IjmKaEHsjf6rQQQdlc0SRu3yfLh6NykLfNn8E7tBz0bQ/viewform",
+    "Astynomia": "https://docs.google.com/forms/d/e/1FAIpQLSeRrZ_cQfJl5HWc7NcwOaNKeocH__m5bXSpQPWaI8y-YWxz0Q/viewform",
+    "eyp": "https://docs.google.com/forms/d/e/1FAIpQLSedUFrRo0W_vgG7cF2jlu277qcvrI8tqSX6XFzeYmfIjOkfIg/viewform",
+    "dyk": "https://docs.google.com/forms/d/e/1FAIpQLSdpO9Dy5sg8EsWBZNoroSF5W551HcrXqi8Se0gdmfjzsHZNyA/viewform",
+    "lyme": "https://docs.google.com/forms/d/e/1FAIpQLSdjKIf9j-TSFgXFTxLwf7_qPgT-2Hh3ko-zroiS24v2iwFpJQ/viewform",
+    "dhm": "https://docs.google.com/forms/d/e/1FAIpQLSeD9htDhAlJbOAbPuvc9rUDYTM50BSqE1oLeUpX0EWQtXbz5g/viewform",
+    "da": "https://docs.google.com/forms/d/e/1FAIpQLSegY-7La_8Ap3_ellj8WAmG5aOxqJt6Q87x4wKIXtOyEJKHAQ/viewform",
+    "p": "https://docs.google.com/forms/d/e/1FAIpQLScwgeI1LbnGKUJOhlG2FyPeJBj2kxjdV5sjrv3c41-5B0lxNQ/viewform"
+}
+}
+
+
